@@ -39,7 +39,7 @@ def extract_content(url: str) -> dict | None:
         return None
 
 # Configure the Gemini API
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyAbJBSlHpQKKDp8O-riDZ4p46FRGZ20C5w"))
 
 def summarize_and_analyze(query: str, content_list: list[dict]) -> str:
     """Summarizes and analyzes the collected content using the Gemini API."""
@@ -102,4 +102,5 @@ if __name__ == '__main__':
     user_query = "What are the latest breakthroughs in Alzheimer's research (2024–2025)?"
     report = run_research_agent(user_query)
     print("\n--- FINAL REPORT ---")
+
     print(report)
