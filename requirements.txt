@@ -6,3 +6,5 @@ ddgs
 cssselect
 beautifulsoup4
 lxml[html_clean]
+fpdf2
+markdown
